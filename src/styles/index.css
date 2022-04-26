@@ -1,15 +1,4 @@
 
-/* 
-
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
 body {
     background-color: darkgrey;
 }
@@ -19,58 +8,44 @@ margin: auto;
 padding-top: 50px;
 }
 .container {
-width: 150px;
+ width: 150px;
 height: 400px;
 background-color: black;
 margin: auto;
 border-radius: 20px;
-
-
-}
-.footer {
-    width: 30px;
-    height: 200px;
-    background-color: black;
-    margin: auto;
-    padding-top: 200px;
-
+display:flex;
+flex-direction: column;
 }
 
-.rojo {
-    padding-top: 20px;
-}
 
-.amarillo {
-    padding-top: 20px;
-}
-.verde {
-    padding-top: 20px;
-    
-}
-.btn.btn-danger {
-    display: block;
+.green {
+    background-color: rgb(26, 78, 7);
+  }
+  .yellow {
+    background-color: rgb(116, 116, 43);
+  }
+  .red {
+    background-color: rgb(80, 24, 24);
+  }  
+
+  .circulo {
+    border: 2px solid rgb(68, 63, 63);
+    margin-top: 30px;
     width: 100px;
     height: 100px;
     border-radius: 50%;
     margin: auto;
-    box-shadow: 10px 8px 40px 20px rgb(222, 36, 36);
-
-}
-
-.btn.btn-warning {
-    display: block;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin: auto;
-    box-shadow: 10px 8px 40px 20px rgb(231, 245, 74);
-}
-
-.btn.btn-success {
-    display: block;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin: auto;
-    box-shadow: 5px 8px 40px 20px rgb(22, 166, 79);
-}
+  }
+  
+.red.selected {
+    background-color: rgb(255, 0, 0);
+    box-shadow: #f8ffcc 0px 0px 50px 20px;
+  }
+  .yellow.selected {
+    background-color: yellow;
+    box-shadow: #f8ffcc 0px 0px 50px 20px;
+  }
+  .green.selected {
+    background-color: rgb(116, 226, 52);
+    box-shadow: #f8ffcc 0px 0px 50px 20px;
+  }
